@@ -7,7 +7,7 @@
   }
 
 body{
-    background-image: url(/assets/images/background-desktop.png);
+    background-image: url(../assets/images/background-desktop.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -203,4 +203,3 @@ body{
     justify-content: center;
   }
 
-  
