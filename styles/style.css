@@ -175,7 +175,7 @@ body{
 
   .container-confirmacion{
     
-    background-image: url(/assets/images/pattern-ticket.svg);
+    background-image: url(../assets/images/pattern-ticket.svg);
     background-size: cover;
     
     background-position: center;
