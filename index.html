@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png"> 
+  <title>Frontend Mentor | Conference ticket generator</title>
+  <link rel="stylesheet" href="styles/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <div class="container-all" id="container-all">
+  <header class="container">
+      <img class="img-logo" src="assets/images/logo-full.svg" alt="">
+  </header> 
+
+  <section class="container container-title">
+    <h1 class="title">¡Tu viaje a la conferencia Coding 2025 comienza aqui!</h1>
+    <h2 class="sub-title">Asegure su lugar en la conferencia de codificación más grande del próximo año.</h2>
+  </section>
+
+  <form id="formulario" class="formulario">
+    <div class="container-formulario-item">
+      <p>Sube tu avatar</p>
+      <div class="drop-zone-container">
+        <label for="foto" class="drop-zone">
+          <img src="assets/images/icon-upload.svg" alt="Upload Icon" class="drop-zone-icon">
+          <p class="drop-zone-info">Selecciona o arrastra tu imagen</p>
+        </label>
+        <span class="drop-zone-span">Sube tu foto (JPG or PNG, max size: 500KB)</span>
+      </div>
+      
+      <input type="file" id="foto" name="foto" hidden>
+
+    </div>
+
+    <div class="container-formulario-item">
+      <label for="nombre">Nombres</label>
+      <input class="formulario-input" type="text" id="nombre" placeholder="Nombre Completo" name="nombre">
+    </div>
+
+    <div class="container-formulario-item">
+      <label for="Correo">Correo</label>
+      <input class="formulario-input" type="email" id="email" placeholder="example@email.com" name="email">
+    </div>
+
+    <div class="container-formulario-item">
+      <label for="github">GitHub Username</label>
+      <input class="formulario-input" type="text" id="github" placeholder="@yourusername" name="github">
+    </div>
+
+    <input class="formulario-boton" type="submit" value="Generar Ticket">
+    
+  </form>
+  </div>
+  
+  <div class="container-all-ticket" id="container-all-ticket" style="display:none">
+    <header class="container">
+      <img class="img-logo" src="assets/images/logo-full.svg" alt="">
+  </header> 
+
+  <section class="container container-title">
+    <h1 class="title">¡Tu viaje a la conferencia Coding 2025 comienza aqui!</h1>
+    <h2 class="sub-title">Te enviamos un correo de confirmacion para tu ticket</h2>
+  </section>
+
+  <div class="container">
+    <div class="container-confirmacion">
+        <div class="confirmacion-fecha">
+            <img src="assets/images/logo-full.svg" alt="imagen-logo">
+            <p><span id="ticket-fecha"></span></p>
+        </div>
+        <div class="user-container">
+            <img class="drop-zone-image" src="" alt="imagen-subida" id="imagen-subida">
+            <div class="user-info">
+                <p class="user-nombre"><span id="ticket-nombre"></span></p>
+            <p class="user-github"><span id="ticket-github"></span></p>
+            </div>
+        </div>
+    </div>
+    
+  </div>
+  </div>
+
+  <script src="js/app.js"></script>
+
+
+</body>
+</html>
